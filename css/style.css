@@ -811,4 +811,7 @@ header {
 .slider-header{
   z-index: 1;
 }
+.slider-wrap{
+  z-index: 2;
+}
 }
