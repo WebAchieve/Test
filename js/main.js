@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             trigger: '.header-top',
             /*   markers: true, */
             start: "bottom bottom",
+            end: "bottom bottom ",
             toggleActions: "play none none reverse",
         }
     })
