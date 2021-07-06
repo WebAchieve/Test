@@ -1,5 +1,5 @@
-* {
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
 :root {
   --main: #5a30f0;
@@ -227,6 +227,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  transform: translateY(100px);
 }
 .features-card__title {
   font-size: 24px;

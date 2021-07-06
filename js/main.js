@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
     tl1.to(".order-button", { scale: .01, bottom: "-100px" })
     tl1.to(".slider-header", { top: "-10px", opacity: 0, delay: -.5 })
     tl1.to(".slider-img", { bottom: 0 })
-    tl1.to(".slider-menu", { width: "100%", duration: 1 })
+    tl1.to(".slider-menu", { width: "100%",duration:1.5,ease: Power1})
     sliderButtons.forEach(el => {
-        tl1.to(el, { duration: .1, opacity: 1, scale: 1 })
+        tl1.to(el, { duration: .2, opacity: 1, scale: 1},'-=.1')
     })
 
     //--------------------------------------------------------
@@ -154,3 +154,9 @@ sliderLinks.forEach(el => {
 
 
 });
+
+//--------------------------------------------------------
+
+gsap.to('.features-card',{y:0,scrollTrigger:'.features-card',stagger:.2,ease: Power1})
+
+
