@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "(min-width: 460px)": function () {
             tl.to(".order-button", { width: 165, height: 165, bottom: -50 })
         },
-        "(min-width: 320px)": function () {
+        "(max-width: 460px)": function () {
             tl.to(".order-button", { width: 110, height: 110, bottom: -50 })
         },
     });
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollTrigger: {
             trigger: '.header-top',
             /*   markers: true, */
-            start: "bottom",
+            start: "bottom bottom",
             toggleActions: "play none none reverse",
         }
     })
