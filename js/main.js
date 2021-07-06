@@ -87,9 +87,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let t2 = gsap.timeline({
         scrollTrigger: {
             trigger: '.header-top',
-             /*  markers: true, */
+            /*    markers: true, */
             start: "bottom",
-            end: "bottom bottom ",
+            end: "bottom +=10",
             toggleActions: "play none none reverse",
         }
     })
